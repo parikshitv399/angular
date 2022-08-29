@@ -1,0 +1,29 @@
+<input type = "text" value= "" #pName/>
+<input type = "number" value= "" #pAge/>
+<input type = "email" value = "" #pEmail/>
+
+
+<hr/>
+<button (click)="NavigateTo()">Navigate to login</button>
+<button class="primary" (click)="AddPerson(pName.value, pAge.value, pEmail.value)" (dblclick)="CantAddPeople()">Add Person</button>
+<button (click)="GetAll()">Get All People</button>
+<button onclick = "alert('JS Event on click')"
+        (mouseover)="ChangeColor(funny)"
+        (mouseout) = "OnMouseOut(funny)">Do Something Funny</button>
+<div #funny style = "width: 300px; height: 300px; background-color: darkolivegreen;">
+</div>
+<ul>
+    <li *ngFor="let p of people">{{p.Name}} | {{p.Age}} | {{p.Email}}</li>
+</ul>
+<hr/>
+<ul>
+    <li *ngFor = "let single of imageUrl">
+        <div>
+            <img [src] = 'single' style="border-style:solid; border-width:1px"/>
+            <hr/>
+            <p>
+                Prod desc
+            </p>
+        </div>
+    </li>
+</ul>

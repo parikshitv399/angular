@@ -1,0 +1,18 @@
+<input type = "text" [(ngModel)]="username" placeholder = "Enter Username" style = "display: block;"/>
+<span>Printing username and its changes: {{username}}</span>
+<input #failcase type = "password" [(ngModel)]="password" placeholder = "Enter Password" style = "display: block;"/>
+<span>Printing password and its changes: {{password}}</span>
+<BUTTON (click) = "DoLogin(failcase)">Login</BUTTON>
+<button (click) = "DoCancel()">Cancel</button>
+<hr/>
+<div *ngIf ="status == 'Login Successful!'; then success else failed"></div>
+<ng-template #success>    
+<span style="color:green; background-color: lightgreen;">{{status}}</span>
+</ng-template>
+<ng-template #failed>
+    <span style="color:maroon; background-color:red">{{status}}</span>
+</ng-template>
+<img src="../assets/lol.jpg">
+<!-- <div *ngIf = "status == 'Login Successful!'; else failed">
+    <b><span style="color:green; background-color: lightgreen;">{{status}}</span></b>
+</div> -->

@@ -1,0 +1,16 @@
+<p>using-http works!</p>
+<button (click)="GetData()">Get Data</button>
+<button (click)="GetMovies()">Get Movies from .NET WebApi</button>
+<hr/>>
+    <ul>
+        <li *ngFor = "let post of propData">
+            {{post.id}}. {{post.title}}
+        </li>
+    </ul>>
+<hr/>
+<h3>Getting data from .NET WebApi!</h3>
+<ul>
+    <li *ngFor = "let movie of movieData">
+        {{movie.name}}
+    </li>
+</ul>

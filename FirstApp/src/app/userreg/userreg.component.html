@@ -1,0 +1,10 @@
+<p>Name: </p><input type = "text" [(ngModel)]="name" placeholder = "Enter your name" style = "display: block;"/>
+<p>Set Username: </p><input type = "text" [(ngModel)]="username" placeholder = "Enter the username of your choice" style = "display: block;"/>
+<p>Set Password: </p><input type = "password" [(ngModel)]="password" placeholder = "Set Password" style = "display: block;"/>
+<p>Confirm Password: </p><input type = "password" [(ngModel)]="confirmPassword" placeholder = "Confirm the password" style = "display: block;"/>
+<p>E-Mail: </p><input type = "text" [(ngModel)]="email" placeholder = "Enter your E-Mail ID" style = "display: block;"/>
+<p>DOB: </p><input type = "date" [(ngModel)]="dob" placeholder = "Enter your Date of Birth" style = "display: block;"/>
+<BUTTON (click) = "DoReg()">Register</BUTTON>
+<button (click) = "DoCancel()">Cancel</button>
+<hr/>
+<span>{{status}}</span>

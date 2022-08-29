@@ -1,0 +1,8 @@
+.primary{
+    border-color: aqua;
+    font-style: italic;
+    background-color: bisque;
+    font-size: large;
+    border-width: thick;
+    border-radius: 6px;
+}
